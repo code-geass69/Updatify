@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import Marquee from './Marquee'; // Import the Marquee component
+
 import '../styles/Navbar.css';
 
 const NavBar = () => {
@@ -29,7 +31,7 @@ const NavBar = () => {
         <div>
             <nav className="navbar fixed-top navbar-expand-lg">
                 <div className="container-fluid">
-                    <Link className="navbar-brand mx-3" style={{color: 'blue', paddingLeft:'20px'}} to="/"> <strong>Updatify</strong></Link>
+                    <Link className="navbar-brand mx-3" style={{ color: 'blue', paddingLeft: '20px' }} to="/"> <strong>Updatify</strong></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -62,7 +64,10 @@ const NavBar = () => {
                         </ul>
                     </div>
                 </div>
+
             </nav>
+            <Marquee content="Stock Market Update: AAPL +2.5%, MSFT +1.3%, GOOG +0.8%" />
+
         </div>
     );
 }

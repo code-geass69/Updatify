@@ -1,0 +1,23 @@
+/* src/styles/Marquee.css */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8f9fa; /* Light background color */
+    padding: 10px 0; /* Add padding for aesthetics */
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
