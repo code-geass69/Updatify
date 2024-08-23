@@ -1,0 +1,16 @@
+
+
+.navbar {
+    background-color: rgb(7, 1, 1);
+}
+
+
+
+.navbar .nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: rgb(7, 64, 179) !important; 
+}
